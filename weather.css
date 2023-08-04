@@ -1,0 +1,210 @@
+@font-face {
+    font-family: try;
+    src:url(IntegralCF-ExtraBold.otf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url("https://images.pexels.com/photos/209831/pexels-photo-209831.jpeg");
+    /* background-position: center; */
+  background-repeat: repeat;
+  /* background-size: cover; */
+  }
+  
+header{
+    text-align: center;
+    font-family: try;
+    font-size: 1.5rem;
+    opacity: 1;
+}
+.input{
+    max-width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.input button{
+    cursor: pointer;
+    width: 4%;
+    height: 4%;
+    border-radius: 1rem;
+    margin-inline: 0.5rem;
+}
+.search_btn{
+   width: 100%;
+   border-radius: 1rem;
+}
+.input_city{
+    min-width: 30%;
+    height: 3rem;
+    border: 2px solid black;
+    border-radius: 1rem;
+    padding-left: 1rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-left: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+
+}
+.error{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 800;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: none;
+}
+.display{
+    width:100%;
+    height: 40%;
+}
+.weather_image{
+    width: 40%;
+}
+.weather_image img{
+    max-width: 50%;
+    height: 20%;
+    border-radius: 2rem;
+    float: left;
+    margin-inline: 3rem;
+    margin-block: 2rem;
+}
+.main_display{
+    width: 60%;
+    float: right;
+    text-align: center;
+    margin-block: 2rem;
+}
+.main_display h1{
+    font-size: 4rem;
+    font-weight: 800;
+    font-family: try;
+}
+.main_display span{
+    font-size: 2rem;
+    font-weight: 800;
+}
+.others{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.info{
+    font-family: try;
+}
+.view_fahren{
+    margin-block: 1rem;
+    border: 2px solid black;
+    width: 20%;
+    height: 1.75rem;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    cursor: pointer;
+}
+.view_celsius{
+    margin-block: 1rem;
+    border: 2px solid black;
+    width: 20%;
+    height: 1.75rem;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    cursor: pointer;
+}
+.change{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    justify-content: space-evenly;
+}
+.view_fahren{
+    height: 2.75rem;
+    width: 85%;
+}  
+.view_celsius{
+    width: 85%;
+    height: 2.75rem;
+} 
+@media (max-width:1200px) and (min-width:1024px) {
+    .input button{
+        cursor: pointer;
+        width: 6%;
+        height: 6%;
+        border-radius: 1rem;
+        margin-inline: 0.5rem;
+    }
+    .weather_image {
+        width: 50%;
+    }
+    
+}
+@media (max-width:1023px) and (min-width:764px){
+    .input button{
+        cursor: pointer;
+        width: 7%;
+        height: 7%;
+        border-radius: 1rem;
+    }
+.weather_image img{
+    margin-block: 4rem;
+    max-width: 65%;
+}
+} 
+
+@media (max-width:763px) and (min-width:481px){
+    .input button{
+        cursor: pointer;
+        width: 62.1562px;
+        height: 55.1562px;
+        border-radius: 1rem;
+    }
+.weather_image img{
+    margin-block: 5rem;
+    max-width: 65%;
+}
+.main_display{
+    width: 54%;
+}
+.main_display h1{
+    font-size: 3rem;
+}
+.main_display span{
+    font-size: 1.5rem;
+}
+.info{
+    font-size: 0.7rem;
+}
+}
+@media (max-width:480px) and (min-width:310px){
+    .input button{
+        cursor: pointer;
+        width: 62.1562px;
+        height: 55.1562px;
+        border-radius: 1rem;
+    }
+.display{
+    width: 100%;
+}
+.weather_image{
+    width: 50%;
+}
+.weather_image img {
+    margin-block: 2rem;
+    margin-inline: 6rem;
+    max-width: 100%;
+}
+.main_display{
+    width: 100%;
+}
+.main_display h1 {
+    font-size: 2rem;
+}
+.main_display span {
+    font-size: 1.5rem;
+}
+
+}
